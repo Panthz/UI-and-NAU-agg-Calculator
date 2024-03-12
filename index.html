@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> NAU and UI Aggregate Calculator</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="script.js"></script>
+</head>
+<body onload="wup()" id="body">
+
+    <!-- shapes -->
+    <div class="shapes">
+    <div id="circle" class=" "></div>
+    <div id="secondCircle" class=""></div>
+    <div id="thirdCircle" class=" "></div>
+    <div id="fourthCircle"class=" "></div>
+    <div id="fifthCircle"class=""></div>
+    <div id="lastCircle"class=""></div>
+  </div>
+  <!-- heading -->
+  <div class="border-2 bg-slate-50 sm: text-lg py-4 pb-28 xl:mx-52 mt-20 md:mx-36 mt-20 lg:mx-52 mt-20 xs" id="fake-body">
+  <h3 id="agg" class="sm:pb-4 xl:text-3xl font-semibold">AGGREGATE CALCULATOR <span id="nauui">FOR NAU AND UI</span></h3>
+<div id="all" class="sm:pb-4 text-center pt-3 xl:text-3xl font-semibold text-center pt-5">
+  <!--  select school-->
+
+<select id="school" onchange ="chooseSchool()" class=" sm:ml-6">
+    <option value="titleOfSchool">--- SELECT A SCHOOL ---</option>
+    <br>
+  <option value="NAU">NNAMDI AZIKIWE UNIVERSITY</option>
+  <br>
+  <option value="UI">UNIVERSITY OF IBADAN</option>
+</select>
+<!-- WAEC grades -->
+
+  <div id="showWAEC" class="non text-center pt-3 xl:mt-4 ">
+    <label for="firstSub" id="lab4W" class="mx-16 ">Enter WAEC Grades</label><br>
+<div class="pt-3 xl:mt-4"></div>
+    <select id="firstSub" class="">
+  <option value="90">A1</option>
+  <option value="80">B2</option>
+  <option value="70">B3</option>
+  <option value="60">C4</option>
+  <option value="55">C5</option>
+  <option value="50">C6</option>
+  <option value="25">D7</option>
+  <option value="0">E8</option>
+  <option value="0">F9</option>
+</select>
+
+<select id="secondSub">
+  <option value="90">A1</option>
+  <option value="80">B2</option>
+  <option value="70">B3</option>
+    <option value="60">C4</option>
+      <option value="55">C5</option>
+  <option value="50">C6</option>
+  <option value="25">D7</option>
+  <option value="0">E8</option>
+  <option value="0">F9</option>
+</select>
+
+<select id="thirdSub">
+  <option value="90">A1</option>
+  <option value="80">B2</option>
+  <option value="70">B3</option>
+    <option value="60">C4</option>
+      <option value="55">C5</option>
+  <option value="50">C6</option>
+  <option value="25">D7</option>
+  <option value="0">E8</option>
+  <option value="0">F9</option>
+</select>
+
+<select id="lastSub">
+  <option value="90">A1</option>
+  <option value="80">B2</option>
+  <option value="70">B3</option>
+    <option value="60">C4</option>
+      <option value="55">C5</option>
+  <option value="50">C6</option>
+  <option value="25">D7</option>
+  <option value="0">E8</option>
+  <option value="0">F9</option>
+</select>
+</div>
+<!--Enter utme score -->
+
+<div id="inputbtn" class="text-center sm:mt-5 ">
+  <div class="pt-3 "></div>
+<label for="input" >Enter UTME Score</label>
+<div class="pt-2"></div>
+<input type="text" name="" id="utme" class="sm:mt-3">
+<div class="pt-3"></div>
+<!--Enter post utme score -->
+
+<div id="pme">
+<label for="input">Enter POST UTME Score</label>
+<div class="pt-2"></div>
+<input type="text" name="" id="pUtme">
+</div>
+<div class="pt-7"></div>
+
+<!--calculate the scores -->
+
+<button onclick="nauAgg(); uiAgg();" class="xl:text-2xl">CALCULATE</button>
+<div class="pt-4"></div>
+<p id="demo"></p>
+
+</div>
+</div>
+</div>
+<script>
+
+</script>
+</body>
+</html>
+
